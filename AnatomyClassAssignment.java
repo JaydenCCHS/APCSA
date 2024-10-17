@@ -7,6 +7,10 @@ package com.mycompany.anatomyclassassignment;
 /**
  *
  * @author JHoang2026
+ * 1. A class is like a blueprint for objects. Classes give instructions and they define the structure and behavior of objects. Objects are located within a class. Objects are like specific instances of a class. Objects have their own data and functions. 
+ * 2. When you pass an object to a print method, the program will print the output on the same line. On the other hand, the println method will print the output on the same line and create a new line after the output. The toString() method is called to perform these prints.
+ * 3. The scope of a variable in a method is limited to only that method. The variable would be local to the method, it could not be referenced anywhere else. The scope of a variable in a class is the whole class. The variable could be referenced anywhere in the class it belongs in. The variable could not be referenced outside of the class. 
+ * 4. Code is below.
  */
 public class AnatomyClassAssignment {
 
