@@ -11,13 +11,16 @@ package com.mycompany.constructorsassignment;
 public class ConstructorsAssignment {
     //This is the main method, everything will be printed from here
     public static void main(String[] args) {
-
+        //Prints out CSA course using the full object constructor
         Course CSA = new Course("Computer Science", "AP CS A", 98, "Mr. Nelson");
         System.out.println(CSA + "\n");
         
+        //Prints out AP Chemistry course using the full object constructor also
         Course APChem = new Course("Chemistry", "AP Chemistry", 95, "Mrs. H");
         System.out.println(APChem + "\n");
-
+        
+        //Prints out Campus Ministry 11 course using the name only creator
+        //Uses the setter methods to set the values for course code, points total, and course instructor
         Course CM11 = new Course("Campus Ministry");
         CM11.setCC("CM 11");
         CM11.setPT(97);
