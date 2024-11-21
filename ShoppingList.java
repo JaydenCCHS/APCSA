@@ -36,7 +36,7 @@ public class ShoppingList {
                 i++;
             }
             //Asks if the user wants to remove anything from their shopping list
-            System.out.println("Do you want to remove anything? If yes, which item (srting)? If not, say \"no\".");
+            System.out.println("Do you want to remove anything? If yes, which item (string)? If not, say \"no\".");
             removeItem = scan.nextLine();
             //Removes item from array list
             SL.remove(removeItem); 
