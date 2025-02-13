@@ -5,7 +5,7 @@
 package com.mycompany.classinheritance;
 
 /**
- *
+ *asdfasdf
  * @author JHoang2026
  */
 import java.util.*;
