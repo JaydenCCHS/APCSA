@@ -15,6 +15,7 @@ public class PolymorphismSort {
 */
     public static void main(String[] args)
     {
+        //Creating the list of contacts with first name, last name, and phone number
         Contact[] friends = new Contact[8];
         friends[0] = new Contact("John", "Smith", "610-555-7384");
         friends[1] = new Contact("Sarah", "Barnes", "215-555-3827");
@@ -24,6 +25,7 @@ public class PolymorphismSort {
         friends[5] = new Contact("Frank", "Phelps", "322-555-2284");
         friends[6] = new Contact("Mario", "Guzman", "322-555-9066");
         friends[7] = new Contact("Marsha", "Grant", "243-555-2837");
+        //Printing out the contacts in telephone (numerical) order using Selection sort and Insertion sort
         Sorting.selectionSort(friends);
         System.out.println("*** Selection Sort ***");
         for (Contact friend : friends)
@@ -35,7 +37,9 @@ public class PolymorphismSort {
             System.out.println(friend);
     }
 }
+//Sorting class
 class Sorting{
+    //Selection Sort
     public static void selectionSort(Comparable[] list)
     {
         int min;
@@ -43,6 +47,7 @@ class Sorting{
         for (int index = 0; index < list.length-1; index++)
         {
             min = index;
+            //Finds smallest value and swaps it with another value so that smallest value ends up in right spot
             for (int scan = index+1; scan < list.length; scan++)
                 if (list[scan].compareTo(list[min]) < 0)
                     min = scan;
@@ -55,6 +60,7 @@ class Sorting{
     /**
     * @param args the command line arguments
     */
+    //Insertion Sort, picks a value and inserts in its proper spot
     public static void insertionSort(Comparable[] list)
     {
         for (int index = 1; index < list.length; index++)
@@ -71,6 +77,7 @@ class Sorting{
         }
     }
 }
+//Comparable class
 class Contact implements Comparable
 {
     private String firstName, lastName, phone;
